@@ -1,0 +1,195 @@
+/*=============== Customer ===============*/
+
+html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+.customer {
+    background-color: var(--secondary-color-light);
+}
+  
+.customer__container .para {
+    margin-block: 1rem 4rem;
+    color: var(--text-light);
+}
+  
+.swiper {
+    width: 100%;
+    padding-bottom: 4rem;
+}
+  
+.customer__review .swiper-pagination-bullet-active {
+    background-color: var(--primary-color);
+}
+  
+.customer__review__card {
+    position: relative;
+    isolation: isolate;
+    max-width: 600px;
+    margin-inline: auto;
+    text-align: center;
+}
+  
+.customer__review__card span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 6rem;
+    line-height: 4rem;
+    color: var(--primary-color);
+    opacity: 0.1;
+}
+  
+.customer__review__card p {
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+  
+.customer__review__details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+  
+.customer__review__details img {
+    max-width: 70px;
+    border-radius: 100%;
+}
+  
+.customer__review__details h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+  
+.customer__review__details h5 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-light);
+}
+
+/*===== Efeitos card =====*/
+
+.card__article {
+    position: relative;
+    overflow: hidden;
+}
+
+.card__img {
+    width: 328px;
+    border-radius: 1.5rem;
+}
+
+.card__data {
+    width: 315px;
+    background-color:var(--secondary-color);
+    padding: 1.5rem 1rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: 1s 1s;
+}
+
+.card__description {
+    display: block;
+    margin-bottom: .25rem;
+    color: var(--white);
+}
+
+.card__title {
+    margin-bottom: .75rem;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.card__button:hover {
+    text-decoration: underline;
+}
+
+.card__article:hover .card__data {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.card__article:hover {
+    animation: remove-overflow 2s forwards;
+}
+
+.card__article:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
+
+.card__article:not(:hover) .card__data {
+    animation: remove-data 1s forwards;
+}
+
+@keyframes show-data {
+    50% {
+        transform: translateY(-10rem);
+    }
+    100% {
+        transform: translateY(-7rem);
+    }
+}
+
+@keyframes remove-overflow {
+    to {
+        overflow: initial;
+    }
+}
+
+@keyframes remove-data {
+    0% {
+        transform: translateY(-7rem);
+    }
+    50% {
+        transform: translateY(-10rem);
+    }
+    100% {
+        transform: translateY(-5rem);
+    }
+}
+
+@keyframes show-overflow {
+    0% {
+        overflow: initial;
+        pointer-events: none;
+    }
+    50% {
+        overflow: hidden;
+    }
+}
