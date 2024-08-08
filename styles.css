@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-  --primary-color: #ff581f;
+  --second-color: #ff581f;
+  --primary-color:  #fd212c;
   --secondary-color: #111111;
   --secondary-color-light: #232220;
   --text-light: #a3a3a3;
@@ -106,7 +107,7 @@ header {
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.8)
     ),
-    url("assets/img/header.jpg");
+    url("assets/img/teste-logo.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

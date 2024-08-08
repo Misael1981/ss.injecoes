@@ -23,6 +23,7 @@ html,
       display: flex;
       justify-content: center;
       align-items: center;
+      border-radius: 10px;
     }
 
     .swiper-slide img {
@@ -68,11 +69,6 @@ html,
     opacity: 0.1;
 }
   
-.customer__review__card p {
-    margin-bottom: 2rem;
-    color: var(--text-light);
-}
-  
 .customer__review__details {
     display: flex;
     align-items: center;
@@ -101,6 +97,7 @@ html,
 .card__article {
     position: relative;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .card__img {
@@ -121,6 +118,15 @@ html,
     margin-inline: auto;
     opacity: 0;
     transition: 1s 1s;
+}
+
+.btn__carrossel {
+    display: inline-block;
+    color: var(--white);
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
 }
 
 .card__description {
