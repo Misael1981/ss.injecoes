@@ -3,25 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <title>SS Injeções-Loja</title>
 
     <!--==================== Link CSS =======================-->
     <link rel="stylesheet" href="loja.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="assets/img/logo-sem-fundo.png" alt="Logo da ss-Injeções">
-        </div>
+    <!--==================== Header =======================-->
+    <header class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="assets/img/logo-sem-fundo.png" alt="Logo da ss-Injeções">
+            </div>
 
-        <div>
-            <input type="text">
-        </div>
-
-        <div>
-            <a href="index.html">Voltar</a>
+            <div class="header__btn">
+                <i class="ri-arrow-left-double-line"></i>
+                <a href="index.html">Voltar</a>
+            </div>
         </div>
     </header>
+
+    <!--==================== Link CSS =======================-->
+    <main>
+
+        <section class="busca">      
+            <form class="header__busca">
+                <label for="searchInput">
+                    <input type="text" id="searchInput" placeholder="Pesquisar produtos" autofocus>
+                    <span><i class="ri-search-line"></i></span>
+                </label>
+            </form>
+        </section>
+
+        <section class="section__search-result">
+            <div class="search-result">
+                <div class="search-result__img">
+                    <img src="assets/produtos-carrossel/roldana-plastica.png" alt="">
+                </div>
+                <div class="consult-img">
+                    <img class="consult-img__item" src="assets/produtos-carrossel/roldana-plastica.png" alt="">
+                    <img class="consult-img__item" src="assets/produtos-carrossel/roldana-plastica.png" alt="">
+                    <img class="consult-img__item"  src="assets/produtos-carrossel/roldana-plastica.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
     
 </body>
 </html>
