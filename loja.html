@@ -7,48 +7,66 @@
     <title>SS Injeções-Loja</title>
 
     <!--==================== Link CSS =======================-->
-    <link rel="stylesheet" href="loja.css">
+    <link rel="stylesheet" href="styles/loja.css">
 </head>
 <body>
     <!--==================== Header =======================-->
-    <header class="container">
-        <div class="header">
-            <div class="logo">
-                <img src="assets/img/logo-sem-fundo.png" alt="Logo da ss-Injeções">
+    <header class="header">
+        <nav class="menu">
+            <div class="menu__logo">
+                <img src="assets/img/logo-sem-fundo.png" alt="">
             </div>
-
-            <div class="header__btn">
+            <div class="menu__link">
                 <i class="ri-arrow-left-double-line"></i>
                 <a href="index.html">Voltar</a>
             </div>
-        </div>
+        </nav>
     </header>
-
-    <!--==================== Link CSS =======================-->
     <main>
-
-        <section class="busca">      
-            <form class="header__busca">
-                <label for="searchInput">
-                    <input type="text" id="searchInput" placeholder="Pesquisar produtos" autofocus>
+        <!--==================== Campo de busca =======================-->
+        <section class="search">
+            <form class="search-content">
+                <label for="searchInput" class="search-content__input">
+                    <input type="text" id="searchInput" placeholder="Pesquisar produto">
                     <span><i class="ri-search-line"></i></span>
                 </label>
             </form>
         </section>
-
-        <section class="section__search-result">
-            <div class="search-result">
-                <div class="search-result__img">
-                    <img src="assets/produtos-carrossel/roldana-plastica.png" alt="">
+        <!--==================== Result =======================-->
+        <section class="result">
+            <div class="result__content">
+                <div class="result-content__images">
+                    <div class="result__img-main">
+                        <img src="assets/produtos-carrossel/roldana-plastica.png" alt="">
+                    </div>
+                    <div class="result__img-choose">
+                        <div class="img-item"><img src="assets/produtos-carrossel/roldana-plastica.png" alt=""></div>
+                        <div class="img-item"><img src="assets/produtos-carrossel/roldana-plastica.png" alt=""></div>
+                        <div class="img-item"><img src="assets/produtos-carrossel/roldana-plastica.png" alt=""></div>
+                    </div>
                 </div>
-                <div class="consult-img">
-                    <img class="consult-img__item" src="assets/produtos-carrossel/roldana-plastica.png" alt="">
-                    <img class="consult-img__item" src="assets/produtos-carrossel/roldana-plastica.png" alt="">
-                    <img class="consult-img__item"  src="assets/produtos-carrossel/roldana-plastica.png" alt="">
+                <div class="result-content__description">
+                    <h3>Roldana Plástica Preta</h3>
+                    <ul>
+                        <li><i class="ri-check-double-line"></i> 2 Ranhuras Com Suporte Injetado Para Cabo Drop De Fibra Óptica Preto</li>
+                        <li><i class="ri-check-double-line"></i> Suspensão de fios</li>
+                        <li><i class="ri-check-double-line"></i> Proteção UV</li>
+                        <li><i class="ri-check-double-line"></i> Alta resistência</li>
+                        <li><i class="ri-check-double-line"></i> Disponível em diversas cores</li>
+                    </ul>
+                    <span>R$ 0,90</span>
+                    <div class="btn">
+                        <a href="#">Comprar <i class="ri-whatsapp-line"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <!--
+     Plástica 2 Ranhuras Com Suporte Injetado Para Cabo Drop De Fibra Óptica Preto
+    -->
+    
+    
     
 </body>
 </html>
