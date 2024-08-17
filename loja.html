@@ -8,6 +8,7 @@
 
     <!--==================== Link CSS =======================-->
     <link rel="stylesheet" href="styles/loja.css">
+    <link rel="stylesheet" href="styles/responsivo-loja.css">
 </head>
 <body>
     <!--==================== Header =======================-->
@@ -25,12 +26,15 @@
     <main>
         <!--==================== Campo de busca =======================-->
         <section class="search">
-            <form class="search-content">
-                <label for="searchInput" class="search-content__input">
-                    <input type="text" id="searchInput" placeholder="Pesquisar produto">
-                    <span><i class="ri-search-line"></i></span>
-                </label>
-            </form>
+            <div class="search__container">
+                <p class="section__subheader">Produtos</p>
+                <form class="search-content">
+                    <label for="searchInput" class="search-content__input">
+                        <input type="text" id="searchInput" placeholder="Pesquisar produto">
+                        <span><i class="ri-search-line"></i></span>
+                    </label>
+                </form>
+            </div>
         </section>
         <!--==================== Result =======================-->
         <section class="result">

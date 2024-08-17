@@ -15,6 +15,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 body {
@@ -69,35 +70,58 @@ body {
 /*=============== Busca ===============*/
 .search {
   padding: 0 6%;
-  height: 10vh;
+}
+
+.search__container {
+  padding: 2rem;
+}
+
+.section__subheader {
+  position: relative;
+  isolation: isolate;
+  margin-bottom: 3rem;
+  padding-left: 20px;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.section__subheader::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 45px;
+  aspect-ratio: 1;
+  background-color: var(--primary-color);
+  z-index: -1;
 }
 
 .search-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
 }
 
 .search-content__input {
-  padding: .5rem;
+  padding: 1rem;
   background-color: var(--white);
   color: var(--secondary-color);
   border: none;
-  border-radius: 10px;
+  border-radius: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .search-content__input input {
-  padding: .5rem;
+  padding: .5rem 1rem;
   border: none;
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 
 .search-content__input span i {
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 
 .search-content__input input:focus-visible {
@@ -122,6 +146,12 @@ body {
   padding-top: 2rem;
 }
 
+.result-content__images {
+  flex-grow: 1;
+  background-color: var(--secondary-color);
+  padding: 2rem;
+}
+
 .result__img-main {
   width: 100%;
   height: auto;
@@ -139,6 +169,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1rem .5rem;
+  margin-top: 1rem;
 }
 
 .img-item {
@@ -152,17 +183,20 @@ body {
 }
 
 .result-content__description {
+  flex-grow: 1;
   background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 2rem;
+  font-size: 4rem;
 }
 
 .result-content__description h3 {
-  font-size: 1.5rem;
+  font-size: 4rem;
   padding-bottom: 2rem;
+  text-align: center;
 }
 
 .result-content__description li {
@@ -175,7 +209,7 @@ body {
 }
 
 .result-content__description span {
-  font-size: 1.5rem;
+  font-size: 4rem;
   color: var(--primary-color);
   padding: 1.5rem 0;
 }
@@ -186,8 +220,11 @@ body {
   color: var(--white);
   padding: 1rem 2rem;
   background-color: var(--primary-color);
-  font-size: 1.5rem;
   border-radius: 5px;
+}
+
+.result-content__description .btn a, i {
+  font-size: 1.5rem;
 }
 
 

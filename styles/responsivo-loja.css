@@ -1,0 +1,32 @@
+@media (width >= 550px) {
+    .search-content__input input {
+        padding: .5rem 3rem;
+    }
+}
+
+@media (width >= 1150px) {
+    .search-content__input input::placeholder {
+        padding: .5 3rem;
+    }
+    .search-content__input input {
+        padding: .5rem 10rem;
+    }
+
+    #searchInput {
+        padding: .5rem 20rem;
+    }
+
+    .result__content {
+        flex-direction: row;
+        gap: 5rem;
+    } 
+
+    .result-content__images {
+        width: 40rem;
+    }
+
+    .result-content__description {
+        width: 40rem;
+        font-size: 4rem;
+    }
+}
