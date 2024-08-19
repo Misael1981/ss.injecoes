@@ -6,9 +6,13 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <title>SS Injeções-Loja</title>
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!--==================== Link CSS =======================-->
     <link rel="stylesheet" href="styles/loja.css">
     <link rel="stylesheet" href="styles/responsivo-loja.css">
+    <link rel="stylesheet" href="styles/loja-carrossel.css">
 </head>
 <body>
     <!--==================== Header =======================-->
@@ -65,12 +69,141 @@
                 </div>
             </div>
         </section>
+        <!--==================== Carrossel produtos =======================-->
+        <section>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card card1">
+                        <div class="card-img">
+                            <img src="assets/produtos-carrossel/roldana-plastica.png" alt="">
+                        </div>
+                        <div class="card-description">
+                            <h1>Produto 1</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore est ducimus distinctio quia quam velit!</p>
+                            <a href="#" class="btn">Ver mais</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card card1">
+                        <div class="card-img">
+                            <img src="assets/produtos-carrossel/roldana-plastica.png" alt="">
+                        </div>
+                        <div class="card-description">
+                            <h1>Produto 1</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore est ducimus distinctio quia quam velit!</p>
+                            <a href="#" class="btn">Ver mais</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card card1">
+                        <div class="card-img">
+                            <img src="assets/produtos-carrossel/roldana-plastica.png" alt="">
+                        </div>
+                        <div class="card-description">
+                            <h1>Produto 1</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore est ducimus distinctio quia quam velit!</p>
+                            <a href="#" class="btn">Ver mais</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card card1">
+                        <div class="card-img">
+                            <img src="assets/produtos-carrossel/roldana-plastica.png" alt="">
+                        </div>
+                        <div class="card-description">
+                            <h1>Produto 1</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore est ducimus distinctio quia quam velit!</p>
+                            <a href="#" class="btn">Ver mais</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card card1">
+                        <div class="card-img">
+                            <img src="assets/produtos-carrossel/roldana-plastica.png" alt="">
+                        </div>
+                        <div class="card-description">
+                            <h1>Produto 1</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore est ducimus distinctio quia quam velit!</p>
+                            <a href="#" class="btn">Ver mais</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card card1">
+                        <div class="card-img">
+                            <img src="assets/produtos-carrossel/roldana-plastica.png" alt="">
+                        </div>
+                        <div class="card-description">
+                            <h1>Produto 1</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore est ducimus distinctio quia quam velit!</p>
+                            <a href="#" class="btn">Ver mais</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card card1">
+                        <div class="card-img">
+                            <img src="assets/produtos-carrossel/roldana-plastica.png" alt="">
+                        </div>
+                        <div class="card-description">
+                            <h1>Produto 1</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore est ducimus distinctio quia quam velit!</p>
+                            <a href="#" class="btn">Ver mais</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card card1">
+                        <div class="card-img">
+                            <img src="assets/produtos-carrossel/roldana-plastica.png" alt="">
+                        </div>
+                        <div class="card-description">
+                            <h1>Produto 1</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore est ducimus distinctio quia quam velit!</p>
+                            <a href="#" class="btn">Ver mais</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card card1">
+                        <div class="card-img">
+                            <img src="assets/produtos-carrossel/roldana-plastica.png" alt="">
+                        </div>
+                        <div class="card-description">
+                            <h1>Produto 1</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore est ducimus distinctio quia quam velit!</p>
+                            <a href="#" class="btn">Ver mais</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
     </main>
     <!--
      Plástica 2 Ranhuras Com Suporte Injetado Para Cabo Drop De Fibra Óptica Preto
     -->
     
-    
-    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        });
+    </script>  
 </body>
 </html>

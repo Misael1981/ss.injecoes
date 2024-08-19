@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        * {
+           box-sizing: border-box;
+           padding: 0;
+           margin: 0; 
+        }
+        body {
+            height: 100vh;
+
+        }
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            margin: 10px;
+            background-color: rgb(230, 230, 230);
+            color: #202020;
+            width: 300px;
+            height: 450px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+        .card-img {
+            width: 300px;
+            height: 280px;
+        }
+        .card-img>img {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card-description>h1 {
+            font-size: 25px;
+            text-align: center;
+            padding: 10px 0 5px 0;
+        }
+        .card-description>p {
+            font-size: 15px;
+            text-align: center;
+            padding: 0 10px 10px 10px;
+        }
+        .btn {
+           text-decoration: none;
+           display: inline-block;
+           border: 1px solid black; 
+           text-align: center;
+           padding: 10px 20px;
+           margin: 0 auto;
+        }
+        .card-description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="card card1">
+            <div class="card-img">
+                <img src="assets/produtos-carrossel/roldana-plastica.png" alt="">
+            </div>
+            <div class="card-description">
+                <h1>Produto 1</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore est ducimus distinctio quia quam velit!</p>
+                <a href="#" class="btn">Ver mais</a>
+            </div>
+        </div>
+        <div class="card card2">
+            <div class="card-img">
+                <img src="assets/produtos-carrossel/desempenadeira-espuma.jpg" alt="">
+            </div>
+            <div class="card-description">
+                <h1>Produto 2</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore est ducimus distinctio quia quam velit!</p>
+                <a href="#" class="btn">Ver mais</a>
+            </div>
+        </div>
+        <div class="card card3">
+            <div class="card-img">
+                <img src="assets/produtos-carrossel/lisa02.png" alt="">
+            </div>
+            <div class="card-description">
+                <h1>Produto 3</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore est ducimus distinctio quia quam velit!</p>
+                <a href="#" class="btn">Ver mais</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

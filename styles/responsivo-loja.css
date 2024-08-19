@@ -5,17 +5,11 @@
 }
 
 @media (width >= 1150px) {
-    .search-content__input input::placeholder {
-        padding: .5 3rem;
-    }
     .search-content__input input {
-        padding: .5rem 10rem;
+        padding: 1rem 15rem;
+        width: 100%;
     }
-
-    #searchInput {
-        padding: .5rem 20rem;
-    }
-
+    
     .result__content {
         flex-direction: row;
         gap: 5rem;
