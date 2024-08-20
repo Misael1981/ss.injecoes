@@ -21,7 +21,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: var(--white);
-  background-color: var(--secondary-color-light);
+  background-color: var(--black);
 }
 
 /*=============== Header ===============*/
